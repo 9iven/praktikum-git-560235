@@ -44,3 +44,9 @@ footer {
     color: #666;
     font-size: 14px;
 }
+
+/* Buat Feature Dark Mode */
+.dark-mode { 
+    background: #333;
+    color: white; 
+}
