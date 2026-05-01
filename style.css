@@ -18,3 +18,16 @@ section {
     margin-top: 15px;
     border: 1px solid #ddd;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #eaeaea;
+}
