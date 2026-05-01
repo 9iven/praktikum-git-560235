@@ -22,64 +22,171 @@ Berikut adalah daftar perintah *Git* yang digunakan selama praktikum beserta pen
 
 Berikut adalah dokumentasi proses penyelesaian *issue*, pembuatan *pull request*, penyelesaian *conflict*, dan pengelolaan *repository* selama praktikum:
 
+---
+
 ### 1. Tugas 1: Inisialisasi & Commit History
 
+<br>
+
 ![Log Git](dokumentasi_gambar/gitlog.png)
+
+<br>
+
 *Tangkapan layar riwayat commit lokal menggunakan perintah `git log --oneline --graph` untuk melihat alur branch dan commit secara ringkas.*
 
-### 2. Tugas 2: Branching & Pull Request
+<br>
+---
 
-![Branch Protection](dokumentasi_gambar/branchprotection.png)
-*Pengaturan Branch Protection Rule di GitHub agar branch utama wajib melalui pull request sebelum di-merge.*
+### 2. Tugas 2 dan 4 (Issues): Branching, Pull Request, dan Issue
+
+<br>
+
+![Integrasi Issue dan PR](dokumentasi_gambar/gabungintugas4ISSUEdan2PR.png)
+
+<br>
+
+*Tampilan GitHub yang menunjukkan bahwa ada 3 issue (untuk tugas 4) juga dibuat sesuai PR tugas 2 agar nanti otomatis tertutup (closed) setelah pull request di-merge.*
+
+<br>
 
 ![Compare dan PR](dokumentasi_gambar/comparedanPR.png)
+
+<br>
+
 *Tampilan saat membuat pull request untuk membandingkan kode dari branch fitur ke branch utama.*
 
+<br>
+
+
 ![3 Pull Requests](dokumentasi_gambar/3PULLREQUESTS.png)
+
+<br>
+
 *Daftar tiga pull request yang berhasil dibuat dari masing-masing branch (feature/navbar, feature/footer, dan hotfix/typo).*
 
+<br>
+
 ![Menutup Issue](dokumentasi_gambar/sekaligusmenutupISSUE.png)
-*Penggunaan format "Closes #1" pada deskripsi pull request untuk menutup issue secara otomatis.*
+
+<br>
+
+*Penggunaan format "Closes #1" pada deskripsi pull request untuk menutup issue secara otomatis. Sekaligus mengerjakan tugas 4.*
+
+<br>
 
 ![Squash and Merge](dokumentasi_gambar/squashnmergeutkFEAT.png)
+
+<br>
+
 *Pemilihan opsi Squash and merge untuk menggabungkan branch fitur agar riwayat commit di main tetap bersih.*
 
+<br>
+
 ![Hapus Branch](dokumentasi_gambar/branchdelet.png)
+
+<br>
+
 *Proses penghapusan branch dari GitHub setelah pull request selesai di-merge.*
 
+<br>
+
 ![Pull Setelah Tugas 2](dokumentasi_gambar/setelahtugas2jgnlupaPULLbiarupdate.png)
+
+<br>
+
 *Proses `git pull origin main` di terminal lokal untuk mengambil update terbaru dari GitHub sebelum lanjut ke tugas berikutnya.*
+
+<br>
+
+![Branch Protection](dokumentasi_gambar/branchprotection.png)
+
+<br>
+
+*Pengaturan Branch Protection Rule di GitHub agar branch utama wajib melalui pull request sebelum di-merge.*
+
+<br>
+---
 
 ### 3. Tugas 3: Konflik & Rebase
 
+<br>
+
 ![Eksperimen Branch A dan B](dokumentasi_gambar/experimenAB.png)
+
+<br>
+
 *Proses pembuatan branch experiment/color-A dan experiment/color-B untuk menyiapkan simulasi merge conflict.*
 
+<br>
+
 ![Bypass Rule](dokumentasi_gambar/bypassAB.png)
+
+<br>
+
 *Penggunaan opsi bypass di GitHub untuk melakukan merge pada branch eksperimen pertama tanpa harus menunggu ulasan.*
 
+<br>
+
 ![Konflik A dan B](dokumentasi_gambar/conflictAB.png)
+
+<br>
+
 *Pesan error di terminal yang menunjukkan terjadinya merge conflict pada file style.css.*
 
+<br>
+
 ![Resolve Manual di VS Code](dokumentasi_gambar/manualconflictresolveVSC.png)
+
+<br>
+
 *Proses penyelesaian konflik secara manual di VS Code dengan memilih kode yang benar dan menghapus batas konflik (<<<<<<<, =======, >>>>>>>).*
 
+<br>
+
 ![Push Setelah Fix](dokumentasi_gambar/setelahfixABmakaPUSH.png)
+
+<br>
+
 *Perintah git commit dan git push untuk menyimpan hasil perbaikan konflik ke GitHub.*
 
+<br>
+
 ![Log Rebase (3 to 1)](dokumentasi_gambar/gitlog3rebaseto1.png)
+
+<br>
+
 *Tiga commit terpisah di branch feature/dark-mode sebelum dilakukan rebase.*
 
-![Editor Rebase 2](dokumentasi_gambar/rebaseedit2.png)
+<br>
+
+![Editor Rebase 2](dokumentasi_gambar/rebaseedit1.png)
+
+<br>
+
 *Tampilan editor saat proses interactive rebase untuk mengubah perintah `pick` menjadi `squash`.*
 
-![Editor Rebase 1](dokumentasi_gambar/rebaseedit1.png)
+<br>
+
+![Editor Rebase 1](dokumentasi_gambar/rebaseedit2.png)
+
+<br>
+
 *Tampilan editor untuk menggabungkan pesan commit menjadi satu pesan akhir yang lebih rapi.*
 
+<br>
+
 ![Log Hasil Rebase](dokumentasi_gambar/rebase.png)
+
+<br>
+
 *Hasil akhir riwayat commit setelah rebase, di mana tiga commit berhasil digabung menjadi satu.*
 
-### 4. Tugas 4: Dokumentasi & Release
+<br>
+---
 
-![Integrasi Issue dan PR](dokumentasi_gambar/gabungintugas4ISSUEdan2PR.png)
-*Tampilan GitHub yang menunjukkan bahwa issue telah otomatis tertutup (closed) setelah pull request di-merge.*
+### 3. Tugas 4: Dokumentasi, Invite, dan Release
+
+<br>
+
+*README.md sesuai yang ada disini. Dosen dan Asisten sudah terinvite. Tahap release v1.0.0 di GitHub mengikuti Releases → Draft new release → buat tag v1.0.0 → isi changelog → Publish release.*
+
