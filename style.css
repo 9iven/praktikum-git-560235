@@ -37,3 +37,10 @@ th {
     color: green;
     font-weight: bold;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
