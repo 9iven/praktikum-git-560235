@@ -31,3 +31,9 @@ th, td {
 th {
     background-color: #eaeaea;
 }
+
+
+.acc {
+    color: green;
+    font-weight: bold;
+}
